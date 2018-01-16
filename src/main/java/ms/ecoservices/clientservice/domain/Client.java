@@ -20,7 +20,7 @@ public class Client {
     private String lastName;
 
     @Column
-    private Float credits;
+    private Float bonuses;
 
     public Client() {}
 
@@ -48,12 +48,12 @@ public class Client {
         this.lastName = lastName;
     }
 
-    public Float getCredits() {
-        return credits;
+    public Float getBonuses() {
+        return bonuses;
     }
 
-    public void setCredits(Float credits) {
-        this.credits = credits;
+    public void setBonuses(Float bonuses) {
+        this.bonuses = bonuses;
     }
 
     @Override
@@ -78,7 +78,7 @@ public class Client {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", credits=" + credits +
+                ", bonuses=" + bonuses +
                 '}';
     }
 }
